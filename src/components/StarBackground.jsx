@@ -15,8 +15,8 @@ export const StarBackground = () => {
     } , []);
 
 
-    // star generation + rendering
 
+    // star generation 
     const generateStars = () => {
         //generate 1-4px stars based on size of display window 
         const numberOfStars = Math.floor(
@@ -39,8 +39,8 @@ export const StarBackground = () => {
         setStars(newStars);
     };
 
-    // meteor generation + rendering
 
+    // meteor generation 
     const generateMeteors= () => {
         const numberOfMeteors = 4
         const newMeteors = [];
@@ -58,6 +58,8 @@ export const StarBackground = () => {
 
         setMeteors(newMeteors);
     };
+
+
 
     return (
     <div className = "fixed inset-0 overflow-hidden pointer-events-none z-0">
@@ -92,6 +94,24 @@ export const StarBackground = () => {
              }}
             />
          ))}
+
+         {/*shooting stars*/}
+        {meteors.map((meteor) => (
+             <div 
+             key = {meteor.id} 
+             className = "meteor animate-meteor" 
+             style={{
+                width: meteor.size + "px",
+                height:  meteor.size + "px",
+                left:  meteor.x - (Math.random() * 10 + 5) + "%",
+                top:  meteor.y + 20 + "%",
+                animationDelay:  meteor.delay,
+                animationDuration: meteor.animationDuration + 4 + "s",
+             }}
+            />
+         ))}
+         
+         
     </div>
     );
 
