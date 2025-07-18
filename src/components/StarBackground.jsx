@@ -12,6 +12,18 @@ export const StarBackground = () => {
     useEffect(() => {
         generateStars();
         generateMeteors();
+
+        const handleResize = () => {
+            generateStars();
+            generateMeteors();
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        }
+        
     } , []);
 
 
@@ -95,7 +107,7 @@ export const StarBackground = () => {
             />
          ))}
 
-         {/*shooting stars*/}
+         {/*shooting stars -- essentially smaller, offset meteors*/}
         {meteors.map((meteor) => (
              <div 
              key = {meteor.id} 
