@@ -33,11 +33,11 @@ export const Navbar = () => {
                 <a className="text-xl font-bold text-primary flex items-center"
                     href="#hero">
                     <span className="relative z-10">
-                        <span className="text-glow text-foreground"> Ameeka Patel </span> Portfolio
+                        <span className="text-glow text-foreground"> {"<ameeka />"} </span> 
                     </span>
                 </a>
 
-                {/* desktop nav - only show on md screen*/}
+                {/* desktop nav - only show on md screen*/}             
                 <div className="hidden md:flex space-x-8">
                     {navItems.map((item, key) => (
                         <a
