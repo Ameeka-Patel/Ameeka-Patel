@@ -32,7 +32,7 @@ export const AboutSection = () => {
 
                         <div className="cosmic-button w-fit flex items-center mx-auto gap-2">
                             <a href="resume.pdf" target="_blank" className="cosmic-button">
-                                resume 
+                                resume
                             </a>
                         </div>
                     </div>

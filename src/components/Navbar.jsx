@@ -32,7 +32,7 @@ export const Navbar = () => {
                 <a className="text-xl font-bold text-primary flex items-center"
                     href="#hero">
                     <span className="relative z-10">
-                        <span className="text-glow text-foreground"> {"<ameeka />"} </span> 
+                        <img className="h-30 w-30"src="/aplogo.png"/>
                     </span>
                 </a>
 
