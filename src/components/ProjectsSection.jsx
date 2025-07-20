@@ -1,0 +1,146 @@
+import { ArrowRight, ExternalLink, Github } from "lucide-react";
+
+const projects = [
+    {
+        //graduateNU
+        id: 1,
+        title: "GraduateNU",
+        description: "(for Sandbox, Northeastern's software consultancy) a tool that empowers 500+ Northeastern students to customize their plan of study through a flexible interface",
+        image: "/projects/filler.png",
+        tags: ["React", "TypeScript", "Next.js", "Prisma", "Vercel"],
+        demoUrl: "#",
+        githubUrl: "#",
+    },
+
+    {
+        //personal portfolio
+        id: 2,
+        title: "Personal Portfolio",
+        description: "you're already viewing it! this is where i show my online and offline projects",
+        image: "/projects/filler.png",
+        tags: ["React", "JavaScript", "Tailwind CSS", "Vite", "Vercel"],
+        demoUrl: "#",
+        githubUrl: "#",
+    },
+
+    {
+        //seam carver
+        id: 3,
+        title: "Seam Carver",
+        description: "(for Accelerated Fundamentals of CS 2) a seam carver algorithm that resizes images by removing lines of the least important pixels from the given image",
+        image: "/projects/filler.png",
+        tags: ["Java", "Image Processing"],
+        demoUrl: "#",
+        githubUrl: "#",
+    },
+
+    {
+        //maze solver
+        id: 4,
+        title: "Maze Solver",
+        description: "(for Accelerated Fundamentals of CS 2)  a game which generates a random maze with kruskal's algorithm and is solved via a Breadth First Search, Depth First Search, or manual movement.",
+        image: "/projects/filler.png",
+        tags: ["Java", "Kruskal's Algorithm", "Breadth First Search", "Depth First Search"],
+        demoUrl: "#",
+        githubUrl: "#",
+    },
+
+    {
+        //plaNUr
+        id: 5,
+        title: "PlaNUr",
+        description: "(for Oasis, a beginner web dev club at Northeastern)  a tool which allows users to streamline the course registration process by browsing professor ratings, class locations, meeting times, and seat availability based on CRN.",
+        image: "/projects/filler.png",
+        tags: ["React", "JavaScript", "Vite", "React Router"],
+        demoUrl: "#",
+        githubUrl: "#",
+    }
+]
+
+export const ProjectsSection = () => {
+    return (
+        <section id="projects" className="py-24 px-4 relative">
+            <div className="container mx-auto max-w-5xl">
+                {/*header + desc*/}
+                <h2 className="text-3xl md:text-4xl font-bold text-center"> projects </h2>
+                <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto pt-2">
+                    here are some of my recent projects.
+                </p>
+
+                {/* projects */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {projects.map((project, key) => (
+                        <div
+                            key={key}
+                            className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+                        >
+                            {/* image */}
+                            <div className="h-48 overflow-hidden">
+                                <img
+                                    src={project.image}
+                                    alt={project.title}
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                            </div>
+
+                            {/* skill tags */}
+                            <div className="p-6">
+                                <div className="flex flex-wrap gap-2 mb-4">
+                                    {project.tags.map((tag) =>
+                                        <span className="px-2 py-1 text-xs font-medium rounded-full bg-primary/10 text-secondary-foreground border">
+                                            {tag}
+                                        </span>
+                                    )}
+                                </div>
+
+                                {/* proj title */}
+                                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+
+                                {/* proj desc */}
+                                <p className="text-muted-foreround text-sm mb-4">
+                                    {project.description}
+                                </p>
+
+                                {/* github + demo link*/}
+                                <div className="flex justify-flex between items-center">
+                                    <div className="flex space-x-3">
+                                        <a
+                                            href={project.demoUrl}
+                                            className="text-foreground/80 hover:text-blue transition-colors duration-300"
+                                            target="_blank">
+                                            <ExternalLink size={20} />
+                                        </a>
+
+                                        <a
+                                            href={project.githubUrl}
+                                            className="text-foreground/80 hover:text-blue transition-colors duration-300"
+                                            target="_blank">
+                                            <Github size={20} />
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </ div>
+                    ))}
+                </div>
+
+                {/* github account link */}
+                <div className="text-center mt-12">
+                    <a 
+                    className="cosmic-button w-fit flex items-center mx-auto gap-2"
+                    href="https://github.com/Ameeka-Patel"
+                    target="_blank">
+                        my github <ArrowRight size={16}/>
+                    </a>
+                    <div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+    );
+};
