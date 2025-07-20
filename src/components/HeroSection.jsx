@@ -1,5 +1,3 @@
-import { ArrowDown } from "lucide-react"
-
 export const HeroSection = () => {
     return (
         <section 
@@ -24,11 +22,6 @@ export const HeroSection = () => {
                             </a>
                         </div>
                     </div>
-                </div>
-
-                <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-                    {/* TBD (adding label or not) <span>scroll</span> */}
-                    <ArrowDown className="h-5 w-5" />
                 </div>
         </section>
     )

@@ -1,4 +1,4 @@
-import { Code, Box, Wrench } from "lucide-react";
+import { Code, Box, Wrench, ArrowRight } from "lucide-react";
 
 export const AboutSection = () => {
     return (
@@ -30,9 +30,9 @@ export const AboutSection = () => {
                             hanging out with friends
                         </p>
 
-                        <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
+                        <div className="cosmic-button w-fit flex items-center mx-auto gap-2">
                             <a href="resume.pdf" target="_blank" className="cosmic-button">
-                                resume
+                                resume 
                             </a>
                         </div>
                     </div>

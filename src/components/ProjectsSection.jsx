@@ -105,14 +105,14 @@ export const ProjectsSection = () => {
                                     <div className="flex space-x-3">
                                         <a
                                             href={project.demoUrl}
-                                            className="text-foreground/80 hover:text-blue transition-colors duration-300"
+                                            className="text-foreground/80 hover:text-primary hover:rotate-20 transition-colors duration-200"
                                             target="_blank">
                                             <ExternalLink size={20} />
                                         </a>
 
                                         <a
                                             href={project.githubUrl}
-                                            className="text-foreground/80 hover:text-blue transition-colors duration-300"
+                                            className="text-foreground/80 hover:text-primary hover:rotate-20 transition-colors duration-200"
                                             target="_blank">
                                             <Github size={20} />
                                         </a>
