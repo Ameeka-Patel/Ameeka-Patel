@@ -4,6 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "../components/AboutSection.jsx";
 import { ProjectsSection } from "../components/ProjectsSection.jsx";
+import { ContactSection } from "../components/ContactSection.jsx";
 
 export const Home = () => {
     return (
@@ -23,6 +24,7 @@ export const Home = () => {
             <HeroSection />
             <AboutSection />
             <ProjectsSection />
+            <ContactSection />
         </main>
 
         {/*Footer*/}
