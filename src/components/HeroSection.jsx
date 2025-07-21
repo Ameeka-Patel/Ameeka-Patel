@@ -2,11 +2,13 @@ export const HeroSection = () => {
     return (
         <section 
             id="hero" 
-            className="relative min-h-screen flex flex-col items-center justify-center px-4">
+            className="relative min-h-screen flex flex-col items-center justify-center px-4 space-y-10">
+                <img className="h-70 w-fit rounded-full animate-fade-in hover:shadow-2xl" src="public\headshot.jpg"/>
                 <div className = "container max-w-4xl mx-auto text-center z-10">
                     <div className = "space-y-6">
                         {/* title section */}
-                        <h1 className = "text-4xl md:text-6xl font-bold tracking-tight">
+
+                        <h1 className = "text-4xl md:text-6xl font-bold tracking-tight ">
                             <span className="opacity-0 animate-fade-in"> hello there, i'm</span>
                             <span className="opacity-0 animate-fade-in-delay-1"> ameeka</span>
                             <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2"> patel</span>
