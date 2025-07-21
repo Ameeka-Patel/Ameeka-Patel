@@ -48,7 +48,7 @@ export const AboutSection = () => {
                         </p>
 
                         <div className="cosmic-button w-fit flex items-center mx-auto gap-2">
-                            <a href="public/resume.pdf" target="_blank" className="cosmic-button p-1">
+                            <a href="https://docs.google.com/document/d/1TBxlDdWmZzNPFrDhvasWkB0YRe45ysLM8ZtKaIxKuXM/edit?usp=sharing" target="_blank" className="cosmic-button p-1">
                                 resume
                             </a>
                         </div>
