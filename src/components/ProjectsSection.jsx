@@ -7,7 +7,7 @@ const projects = [
         title: "GraduateNU",
         description: "(for Sandbox, Northeastern's software consultancy) a tool that empowers 500+ Northeastern students to customize their plan of study through a flexible interface",
         image: "/projects/graduateNU.png",
-        tags: ["React", "TypeScript", "Next.js", "Prisma", "Vercel"],
+        tags: ["React", "TypeScript", "Nest.js", "PostgreSQL", "Docker"],
         demoUrl: "https://graduatenu.com/",
         githubUrl: "https://github.com/sandboxnu/graduatenu",
     },
