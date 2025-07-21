@@ -1,4 +1,4 @@
-import { Code, Box, Wrench, ArrowRight } from "lucide-react";
+import { Code, Box, Wrench, ArrowRight, School, Calendar, LibraryBig, GraduationCap } from "lucide-react";
 
 export const AboutSection = () => {
     return (
@@ -8,25 +8,42 @@ export const AboutSection = () => {
                     about me
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start text-left">
                     {/* left column w/ text content */}
                     <div className="space-y-6">
                         {/* <h3 className="text-2xl font-semibold">header here</h3> */}
 
-                        <p className="text-muted-foreground">
-                            i'm a rising 2nd year at Northeastern University with a combined
-                            major in Computer Science and Business Administration, concentrating
-                            in Marketing Analytics.
-                        </p>
+                        <div className="text-left space-y-2">
+                            <p>the basics: </p>
+                            <div className="flex flex-wrap gap-x-1">
+                                <Calendar /> <b>year: </b>rising sophomore
+                            </div>
+
+                            <div className="flex flex-wrap gap-x-1">
+                                <School /><b>school: </b>Northeastern University Honors Program
+                            </div>
+
+                            <div className="flex flex-wrap gap-x-1">
+                                <LibraryBig /><b>major: </b> computer science and business administration, 
+                                concentrating in marketing analytics
+                            </div>
+
+                            <div className="flex flex-wrap gap-x-1">
+                                <GraduationCap /><b>expected grad year: </b> December, 2027
+                            </div>
+
+                        </div>
+
 
                         <p className="text-muted-foreground">
                             i am always always eager to learn something new and further my
-                            web dev skills through Sandbox, FirstByte, or personal projects.
+                            web dev skills, wehther that is through Sandbox (see my projects
+                            below) or through personal projects like this!
                         </p>
 
                         <p className="text-muted-foreground">
                             when i'm not working on these projects, you will find me
-                            baking/cooking (check out my recipes), going on long runs, or
+                            baking/cooking, going on long runs, or
                             hanging out with friends
                         </p>
 
