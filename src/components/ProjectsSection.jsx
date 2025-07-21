@@ -6,10 +6,10 @@ const projects = [
         id: 1,
         title: "GraduateNU",
         description: "(for Sandbox, Northeastern's software consultancy) a tool that empowers 500+ Northeastern students to customize their plan of study through a flexible interface",
-        image: "/projects/filler.png",
+        image: "/projects/graduateNU.png",
         tags: ["React", "TypeScript", "Next.js", "Prisma", "Vercel"],
-        demoUrl: "#",
-        githubUrl: "#",
+        demoUrl: "https://graduatenu.com/",
+        githubUrl: "https://github.com/sandboxnu/graduatenu",
     },
 
     {
@@ -20,7 +20,7 @@ const projects = [
         image: "/projects/filler.png",
         tags: ["React", "JavaScript", "Tailwind CSS", "Vite", "Vercel"],
         demoUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://github.com/Ameeka-Patel/personalwebsite",
     },
 
     {
@@ -28,10 +28,10 @@ const projects = [
         id: 3,
         title: "Seam Carver",
         description: "(for Accelerated Fundamentals of CS 2) a seam carver algorithm that resizes images by removing lines of the least important pixels from the given image",
-        image: "/projects/filler.png",
+        image: "/projects/seamCarver.png",
         tags: ["Java", "Image Processing"],
-        demoUrl: "#",
-        githubUrl: "#",
+        demoUrl: "https://youtu.be/DgdfHFr-LkQ",
+        githubUrl: "https://github.com/Ameeka-Patel/Seam-Carver",
     },
 
     {
