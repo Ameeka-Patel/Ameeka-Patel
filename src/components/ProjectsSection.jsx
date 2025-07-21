@@ -39,10 +39,10 @@ const projects = [
         id: 4,
         title: "Maze Solver",
         description: "(for Accelerated Fundamentals of CS 2)  a game which generates a random maze with kruskal's algorithm and is solved via a Breadth First Search, Depth First Search, or manual movement.",
-        image: "/projects/filler.png",
+        image: "/projects/mazeGame.png",
         tags: ["Java", "Kruskal's Algorithm", "Breadth First Search", "Depth First Search"],
-        demoUrl: "#",
-        githubUrl: "#",
+        demoUrl: "https://youtu.be/OIgNwQZo7cg",
+        githubUrl: "https://github.com/Ameeka-Patel/Maze-Game",
     },
 
     {
