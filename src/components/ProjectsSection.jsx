@@ -27,9 +27,9 @@ const projects = [
         //seam carver
         id: 3,
         title: "Seam Carver",
-        description: "(for Accelerated Fundamentals of CS 2) a seam carver algorithm that resizes images by removing lines of the least important pixels from the given image",
+        description: "(for Accelerated Fundamentals of CS 2) a seam carving algorithm that resizes images by removing seams, lines of the least important pixels from the given image",
         image: "/projects/seamCarver.png",
-        tags: ["Java", "Image Processing"],
+        tags: ["Java", "Image Processing", "Deques", "Iterators"],
         demoUrl: "https://youtu.be/DgdfHFr-LkQ",
         githubUrl: "https://github.com/Ameeka-Patel/Seam-Carver",
     },
