@@ -50,10 +50,10 @@ const projects = [
         id: 5,
         title: "PlaNUr",
         description: "(for Oasis, a beginner web dev club at Northeastern)  a tool which allows users to streamline the course registration process by browsing professor ratings, class locations, meeting times, and seat availability based on CRN.",
-        image: "/projects/filler.png",
+        image: "/projects/plaNUr.png",
         tags: ["React", "JavaScript", "Vite", "React Router"],
-        demoUrl: "#",
-        githubUrl: "#",
+        demoUrl: "https://github.com/Oasis-NEU/f24-group20",
+        githubUrl: "https://github.com/Oasis-NEU/f24-group20",
     }
 ]
 
