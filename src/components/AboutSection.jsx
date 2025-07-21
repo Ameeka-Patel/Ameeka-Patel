@@ -37,13 +37,13 @@ export const AboutSection = () => {
 
                         <p className="text-muted-foreground">
                             i am always always eager to learn something new and further my
-                            web dev skills, wehther that is through Sandbox (see my projects
+                            web dev skills, whether that is through Sandbox (see my projects
                             below) or through personal projects like this!
                         </p>
 
                         <p className="text-muted-foreground">
-                            when i'm not working on these projects, you will find me
-                            baking/cooking, going on long runs, or
+                            other than this, my offline hobbies include 
+                            baking/cooking, going on long runs, and
                             hanging out with friends
                         </p>
 
