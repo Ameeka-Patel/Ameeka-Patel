@@ -26,7 +26,7 @@ export const ContactSection = () => {
     return (
         <section
             id="contact"
-            className="py-24 px-4 relative bg-secondary/30">
+            className="py-24 px-4 relative bg-secondary/30 flex items-center">
             <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
                     get in touch
@@ -97,7 +97,7 @@ export const ContactSection = () => {
                                 </div>
 
                                 <div className="pt-2">
-                                    <p>Boston,MA | New Jersey</p>
+                                    <p>Boston, MA | New Jersey</p>
                                 </div>
                             </div>
 
@@ -106,11 +106,12 @@ export const ContactSection = () => {
                     </div>
 
                     {/* contact form */}
+                    {/*
                     <div className="bg-card p-8 rounded-lg shadow-xs"
                         onSubmit={handleSubmit}>
                         <h3 className="text-2xl font-semibold mb-6">send a message: </h3>
                         <form className="space-y-6">
-                            {/* name */}
+                            //name 
                             <div>
                                 <label
                                     htmlFor="name"
@@ -123,7 +124,7 @@ export const ContactSection = () => {
                                     placeholder="Ameeka Patel..." />
                             </div>
 
-                            {/* email */}
+                            //email
                             <div>
                                 <label
                                     htmlFor="email"
@@ -136,7 +137,7 @@ export const ContactSection = () => {
                                     placeholder="xyz@gmail.com..." />
                             </div>
 
-                            {/* message */}
+                           //message
                             <div>
                                 <label
                                     htmlFor="message"
@@ -159,6 +160,7 @@ export const ContactSection = () => {
 
                         </form>
                     </div>
+                    */}
                 </div>
             </div>
 
