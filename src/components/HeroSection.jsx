@@ -3,7 +3,6 @@ export const HeroSection = () => {
         <section 
             id="hero" 
             className="relative min-h-screen flex flex-col items-center justify-center px-4 space-y-8">
-                <h1 className="bg-red-300 rounded-full text-2xl font-semibold p-2" >hey :) this page is still under construction</h1>
                 <img className="w-80 md:w-105 h-auto rounded-full animate-fade-in hover:shadow-2xl object-cover" src="/headshot.jpg"/>
                 <div className = "container max-w-4xl mx-auto text-center z-10">
                     <div className = "space-y-6">
