@@ -57,7 +57,7 @@ const projects = [
     }
 ]
 
-export const ProjectsSection = () => {
+export const OnlineProjectsSection = () => {
     return (
         <section id="onlineProjects" className="py-24 px-4 relative">
             <div className="container mx-auto max-w-5xl">

@@ -1,12 +1,12 @@
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "../components/AboutSection.jsx";
-import { ProjectsSection } from "../components/ProjectsSection.jsx";
+import { OnlineProjectsSection } from "../components/OnlineProjectsSection.jsx";
 import { ContactSection } from "../components/ContactSection.jsx";
 import { Footer } from "../components/Footer.jsx";
 import { LeafBackground } from "../components/LeafBackground.jsx";
 import { LeafToggle } from "../components/LeafToggle.jsx";
-import { OfflineProjects } from "../components/OfflineProjects.jsx";
+import { OfflineProjectsSection } from "../components/OfflineProjectsSection.jsx";
 
 export const Home = () => {
     return (
@@ -28,8 +28,8 @@ export const Home = () => {
         <main>
             <HeroSection />
             <AboutSection />
-            <ProjectsSection />
-            <OfflineProjects />
+            <OnlineProjectsSection />
+            <OfflineProjectsSection />
             <ContactSection />
         </main>
 
