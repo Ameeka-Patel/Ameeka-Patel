@@ -6,6 +6,7 @@ import { ProjectsSection } from "../components/ProjectsSection.jsx";
 import { ContactSection } from "../components/ContactSection.jsx";
 import { Footer } from "../components/Footer.jsx";
 import { LeafBackground } from "../components/LeafBackground.jsx";
+import { LeafToggle } from "../components/LeafToggle.jsx";
 
 export const Home = () => {
     return (
@@ -13,6 +14,8 @@ export const Home = () => {
 
         {/*Theme Toggle
         <ThemeToggle />*/}
+        <LeafToggle />
+        
         
         
         {/*Background Effects*/}

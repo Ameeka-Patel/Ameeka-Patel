@@ -1,7 +1,9 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
 
 export const LeafBackground = () => {
+    const storedTheme = localStorage.getItem("theme");
+
     //leaves: id, size, x, y, opacity, animationDuration
     const [leaves, setLeaves] = useState([]);
 
@@ -18,8 +20,8 @@ export const LeafBackground = () => {
         return () => {
             window.removeEventListener('resize', handleResize);
         }
-        
-    } , []);
+
+    }, []);
 
 
 
@@ -28,13 +30,13 @@ export const LeafBackground = () => {
         //generate 1-4px leaves based on size of display window 
         const numberOfLeaves = Math.floor(
             window.innerWidth * window.innerHeight / 100000
-        ); 
+        );
 
         const newLeaves = []
 
         for (let i = 0; i < numberOfLeaves; i++) {
             newLeaves.push({
-                id : i,
+                id: i,
                 size: Math.random() * 10 + 5,
                 x: Math.random() * 100,
                 y: Math.random() * 100,
@@ -48,22 +50,25 @@ export const LeafBackground = () => {
 
 
     return (
-    <div className = "fixed inset-0 overflow-hidden pointer-events-none z-0">
-        {/*leaves*/}
-        {leaves.map((leaf) => (
-             <div 
-             key = {leaf.id} 
-             className = "leaf animate-leaf" 
-             style={{
-                width: leaf.size + "px",
-                height:  leaf.size + 10 + "px",
-                left:  leaf.x + "%",
-                top:  leaf.y +  "%",
-                animationDelay:  leaf.delay,
-                animationDuration: leaf.animationDuration + 4 + "s",
-             }}
-            />
-         ))}
-    </div>
+        <div className="fixed inset-0 overflow-hidden pointer-events-none -z-50">
+            {/*leaves*/}
+            {leaves.map((leaf) => (
+                <div
+                    key={leaf.id}
+                    className="leaf animate-leaf"
+                    style={{
+                        width: leaf.size + "px",
+                        height: leaf.size + 10 + "px",
+                        left: leaf.x + "%",
+                        top: leaf.y + "%",
+                        animationDelay: leaf.delay,
+                        animationDuration: leaf.animationDuration + 4 + "s",
+                    }}
+                />
+            ))}
+        </div>
     );
+
+
+
 };
