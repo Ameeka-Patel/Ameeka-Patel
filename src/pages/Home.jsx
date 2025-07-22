@@ -6,6 +6,7 @@ import { AboutSection } from "../components/AboutSection.jsx";
 import { ProjectsSection } from "../components/ProjectsSection.jsx";
 import { ContactSection } from "../components/ContactSection.jsx";
 import { Footer } from "../components/Footer.jsx";
+import { LeafBackground } from "../components/LeafBackground.jsx";
 
 export const Home = () => {
     return (
@@ -17,6 +18,7 @@ export const Home = () => {
         
         {/*Background Effects
         <StarBackground />*/}
+        <LeafBackground />
         
 
         {/*Nav Bar*/}
