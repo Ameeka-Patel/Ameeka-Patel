@@ -35,7 +35,7 @@ export const LeafBackground = () => {
         for (let i = 0; i < numberOfLeaves; i++) {
             newLeaves.push({
                 id : i,
-                size: Math.random() * 100 ,
+                size: Math.random() * 10 + 5,
                 x: Math.random() * 100,
                 y: Math.random() * 100,
                 opacity: Math.random() * 0.5 + 0.5,
@@ -56,7 +56,7 @@ export const LeafBackground = () => {
              className = "leaf animate-leaf" 
              style={{
                 width: leaf.size + "px",
-                height:  leaf.size + "px",
+                height:  leaf.size + 10 + "px",
                 left:  leaf.x + "%",
                 top:  leaf.y +  "%",
                 animationDelay:  leaf.delay,
