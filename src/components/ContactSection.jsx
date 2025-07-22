@@ -8,21 +8,6 @@ export const ContactSection = () => {
     const { toast } = useToast();
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-
-
-    const handleSubmit = (e) => {
-        e.preventDefault()
-
-        setIsSubmitting(true);
-
-        setTimeout(() => {
-            toast({
-                title: "message sent",
-                description: "thank you for your message. i'll get back to you soon"
-            })
-            setIsSubmitting(false);
-        }, 1500)
-    }
     return (
         <section
             id="contact"
@@ -103,64 +88,6 @@ export const ContactSection = () => {
 
                         </div>
                     </div>
-
-                    {/* contact form */}
-                    {/*
-                    <div className="bg-card p-8 rounded-lg shadow-xs"
-                        onSubmit={handleSubmit}>
-                        <h3 className="text-2xl font-semibold mb-6">send a message: </h3>
-                        <form className="space-y-6">
-                            //name 
-                            <div>
-                                <label
-                                    htmlFor="name"
-                                    className="block text-sm font-medium mb-2">your name: </label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    required className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                                    placeholder="Ameeka Patel..." />
-                            </div>
-
-                            //email
-                            <div>
-                                <label
-                                    htmlFor="email"
-                                    className="block text-sm font-medium mb-2">your email: </label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    required className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                                    placeholder="xyz@gmail.com..." />
-                            </div>
-
-                           //message
-                            <div>
-                                <label
-                                    htmlFor="message"
-                                    className="block text-sm font-medium mb-2">your message: </label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    required className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
-                                    placeholder="hello, i wanted to reach out..." />
-                            </div>
-
-                            <button
-                                type="submit"
-                                disabled={isSubmitting}
-                                className={cn("cosmic-button w-full flex items-center justify-center gap-2",
-                                )}>
-                                {isSubmitting ? "sending..." : "send message"}
-                                <Send size={16} />
-                            </button>
-
-                        </form>
-                    </div>
-                    
-                </div>*/}
             </div>
 
 
