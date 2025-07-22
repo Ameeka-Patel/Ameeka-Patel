@@ -162,9 +162,9 @@
 
 @utility gradient-border {
   @apply relative rounded-md;
-  background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)));
+  background: transparent;
   background-clip: padding-box;
-  border: 1px solid transparent;
+  border: 2px solid lightgray;
 }
 
 @utility clear-button {
