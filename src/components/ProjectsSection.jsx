@@ -129,7 +129,7 @@ export const ProjectsSection = () => {
                 {/* github account link */}
                 <div className="text-center mt-12">
                     <a 
-                    className="cosmic-button w-fit flex items-center mx-auto gap-2"
+                    className="clear-button w-fit flex items-center mx-auto gap-2"
                     href="https://github.com/Ameeka-Patel"
                     target="_blank">
                         my github <ArrowRight size={16}/>

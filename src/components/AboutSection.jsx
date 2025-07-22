@@ -47,8 +47,8 @@ export const AboutSection = () => {
                             hanging out with friends
                         </p>
 
-                        <div className="cosmic-button w-fit flex items-center mx-auto gap-2">
-                            <a href="/resume.pdf" rel="noopener noreferrer"  target="_blank" className="cosmic-button p-1">
+                        <div className="clear-button w-fit flex items-center mx-auto gap-2">
+                            <a href="/resume.pdf" rel="noopener noreferrer"  target="_blank" >
                                 resume
                             </a>
                         </div>
