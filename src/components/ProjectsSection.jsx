@@ -59,10 +59,10 @@ const projects = [
 
 export const ProjectsSection = () => {
     return (
-        <section id="projects" className="py-24 px-4 relative">
+        <section id="onlineProjects" className="py-24 px-4 relative">
             <div className="container mx-auto max-w-5xl">
                 {/*header + desc*/}
-                <h2 className="text-3xl md:text-4xl font-bold text-center"> projects </h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center"> (online) projects </h2>
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto pt-2">
                     here are some of my recent projects! feel free to click around and watch the demos
                     or browse the repos

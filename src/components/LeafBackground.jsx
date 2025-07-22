@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 
 
 export const LeafBackground = () => {
-    const storedTheme = localStorage.getItem("theme");
 
     //leaves: id, size, x, y, opacity, animationDuration
     const [leaves, setLeaves] = useState([]);
