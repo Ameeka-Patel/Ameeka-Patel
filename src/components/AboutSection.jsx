@@ -1,5 +1,38 @@
 import { Code, Box, Wrench, ArrowRight, School, Calendar, LibraryBig, GraduationCap } from "lucide-react";
 
+const myLanguages = [
+    "Java",
+    "Python",
+    "TypeScript",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Racket BSL",
+    "R"
+]
+
+const myLibrariesAndFrameworks = [
+    "React",
+    "Next.js",
+    "Node.js",
+    "Prisma",
+    "Tailwind CSS",
+    "JUnit"
+]
+
+const myTools = [
+    "Git",
+    "Docker",
+    "Vite",
+    "Vercel",
+    "VSCode",
+    "IntelliJ",
+    "Eclipse",
+    "RStudio",
+    "Figma",
+    "Postman"
+]
+
 export const AboutSection = () => {
     return (
         <section id="about" className="py-24 px-4 relative">
@@ -58,7 +91,7 @@ export const AboutSection = () => {
                     <div className="grid grid-cols-1 gap-6">
 
                         <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
+                            <div className="flex items-start gap-2">
 
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <Code className="h-6 w-6" />
@@ -66,22 +99,12 @@ export const AboutSection = () => {
 
                                 <div className="text-left">
                                     <h4 className="text-lg font-semibold">languages</h4>
-                                    <div className="flex space-x-3 text-center pt-4">
-                                        <div className="grid-cols-1 space-y-3">
-                                            <p className="bg-primary/10 rounded-sm p-1"> Java </p>
-                                            <p className="bg-primary/10 rounded-sm p-1"> Python </p>
-                                            <p className="bg-primary/10 rounded-sm p-1"> TypeScript </p>
-                                        </div>
-
-                                        <div className="grid-cols-1  space-y-3">
-                                            <p className="bg-primary/10 rounded-sm p-1"> JavaScript </p>
-                                            <p className="bg-primary/10 rounded-sm p-1"> HTML </p>
-                                            <p className="bg-primary/10 rounded-sm p-1"> CSS </p>
-                                        </div>
-
-                                        <div className="grid-cols-1  space-y-3">
-                                            <p className="bg-primary/10 rounded-sm p-1"> Racket BSL </p>
-                                            <p className="bg-primary/10 rounded-sm p-1"> R </p>
+                                    <div className="text-center pt-4">
+                                        <div className="text-left space-y-3">
+                                            {myLanguages.map((language) =>
+                                                 <p className="bg-primary/10 rounded-sm p-2 mr-2 inline-block"> {language} </p>
+                                                )
+                                            }
                                         </div>
                                     </div>
                                 </div>
@@ -96,17 +119,13 @@ export const AboutSection = () => {
                                 </div>
 
                                 <div className="text-left">
-                                    <h4 className="text-lg font-semibold">libraries + frameworks</h4>
-                                    <div className="flex space-x-3 text-center pt-4">
-                                        <div className="grid-cols-1  space-y-3">
-                                            <p className="bg-primary/10 rounded-sm p-1">React</p>
-                                            <p className="bg-primary/10 rounded-sm p-1">Next.js</p>
-                                            <p className="bg-primary/10 rounded-sm p-1">Node.js</p>
-                                        </div>
-                                        <div className="grid-cols-1  space-y-3">
-                                            <p className="bg-primary/10 rounded-sm p-1">Prisma</p>
-                                            <p className="bg-primary/10 rounded-sm p-1">Tailwind CSS</p>
-                                            <p className="bg-primary/10 rounded-sm p-1">JUnit</p>
+                                    <h4 className="text-lg font-semibold">libraries & frameworks</h4>
+                                    <div className="text-center pt-4">
+                                        <div className="text-left space-y-3">
+                                            {myLibrariesAndFrameworks.map((libOrFramework) =>
+                                                 <p className="bg-primary/10 rounded-sm p-2 mr-2 inline-block"> {libOrFramework} </p>
+                                                )
+                                            }
                                         </div>
                                     </div>
                                 </div>
@@ -122,22 +141,12 @@ export const AboutSection = () => {
 
                                 <div className="text-left">
                                     <h4 className="text-lg font-semibold">tools</h4>
-                                    <div className="flex space-x-3 text-center pt-4">
-                                        <div className="grid-cols-1  space-y-3">
-                                            <p className="bg-primary/10 rounded-sm p-1"> Git </p>
-                                            <p className="bg-primary/10 rounded-sm p-1"> Docker </p>
-                                            <p className="bg-primary/10 rounded-sm p-1"> Vite </p>
-                                            <p className="bg-primary/10 rounded-sm p-1"> Vercel </p>
-                                        </div>
-                                        <div className="grid-cols-1  space-y-3">
-                                            <p className="bg-primary/10 rounded-sm p-1"> VSCode </p>
-                                            <p className="bg-primary/10 rounded-sm p-1"> IntelliJ </p>
-                                            <p className="bg-primary/10 rounded-sm p-1"> Eclipse </p>
-                                        </div>
-                                        <div className="grid-cols-1  space-y-3">
-                                            <p className="bg-primary/10 rounded-sm p-1"> RStudio </p>
-                                            <p className="bg-primary/10 rounded-sm p-1"> Figma </p>
-                                            <p className="bg-primary/10 rounded-sm p-1"> Postman </p>
+                                    <div className="text-center pt-4">
+                                        <div className="text-left space-y-3">
+                                            {myTools.map((tool) =>
+                                                 <p className="bg-primary/10 rounded-sm p-2 mr-2 inline-block"> {tool} </p>
+                                                )
+                                            }
                                         </div>
                                     </div>
                                 </div>
