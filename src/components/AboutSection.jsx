@@ -101,8 +101,8 @@ export const AboutSection = () => {
                                     <h4 className="text-lg font-semibold">languages</h4>
                                     <div className="text-center pt-4">
                                         <div className="text-left space-y-3">
-                                            {myLanguages.map((language) =>
-                                                 <p className="bg-primary/10 rounded-sm p-2 mr-2 inline-block"> {language} </p>
+                                            {myLanguages.map((language, index) =>
+                                                 <p key={index} className="bg-primary/10 rounded-sm p-2 mr-2 inline-block"> {language} </p>
                                                 )
                                             }
                                         </div>
@@ -122,8 +122,8 @@ export const AboutSection = () => {
                                     <h4 className="text-lg font-semibold">libraries & frameworks</h4>
                                     <div className="text-center pt-4">
                                         <div className="text-left space-y-3">
-                                            {myLibrariesAndFrameworks.map((libOrFramework) =>
-                                                 <p className="bg-primary/10 rounded-sm p-2 mr-2 inline-block"> {libOrFramework} </p>
+                                            {myLibrariesAndFrameworks.map((libOrFramework, index) =>
+                                                 <p key={index} className="bg-primary/10 rounded-sm p-2 mr-2 inline-block"> {libOrFramework} </p>
                                                 )
                                             }
                                         </div>
@@ -143,8 +143,8 @@ export const AboutSection = () => {
                                     <h4 className="text-lg font-semibold">tools</h4>
                                     <div className="text-center pt-4">
                                         <div className="text-left space-y-3">
-                                            {myTools.map((tool) =>
-                                                 <p className="bg-primary/10 rounded-sm p-2 mr-2 inline-block"> {tool} </p>
+                                            {myTools.map((tool, index) =>
+                                                 <p key={index}  className="bg-primary/10 rounded-sm p-2 mr-2 inline-block"> {tool} </p>
                                                 )
                                             }
                                         </div>
