@@ -6,6 +6,7 @@ import { ContactSection } from "../components/ContactSection.jsx";
 import { Footer } from "../components/Footer.jsx";
 import { LeafBackground } from "../components/LeafBackground.jsx";
 import { LeafToggle } from "../components/LeafToggle.jsx";
+import { OfflineProjects } from "../components/OfflineProjects.jsx";
 
 export const Home = () => {
     return (
@@ -28,6 +29,7 @@ export const Home = () => {
             <HeroSection />
             <AboutSection />
             <ProjectsSection />
+            <OfflineProjects />
             <ContactSection />
         </main>
 

@@ -69,7 +69,7 @@ export const AboutSection = () => {
 
 
                         <p className="text-muted-foreground">
-                            i am always always eager to learn something new and further my
+                            i am always eager to learn something new and further my
                             web dev skills, whether that is through Sandbox (see my projects
                             below) or through personal projects like this!
                         </p>
