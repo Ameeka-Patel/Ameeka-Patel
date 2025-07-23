@@ -73,7 +73,7 @@ export const OnlineProjectsSection = () => {
                     {projects.map((project) => (
                         <div
                             key={project.id}
-                            className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+                            className="group bg-white/80 border border-gray rounded-lg overflow-hidden shadow-xs card-hover"
                         >
                             {/* image */}
                             <div className="h-48 overflow-hidden">

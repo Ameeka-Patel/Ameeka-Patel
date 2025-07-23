@@ -1,4 +1,3 @@
-import { PinIcon } from "lucide-react";
 
 const featuredProjects = [
     //lemon meringue tart 
@@ -58,9 +57,6 @@ export const OfflineProjectsSection = () => {
 
                 {/* other */}
                 <h2 className="text-xl text-gray-400 md:text-2xl font-semibold text-center pb-3"> ( more coming soon :O )  </h2>
-
-
-
             </div>
 
         </section>
