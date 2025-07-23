@@ -1,3 +1,4 @@
+import { PinIcon } from "lucide-react";
 
 const featuredProjects = [
     //lemon meringue tart 
@@ -5,6 +6,7 @@ const featuredProjects = [
         id: 1,
         title: "lemon meringue tart",
         image: "/food/lemonTart.jpeg",
+        desc: "blah blahh lbldbwe ocneqc ow xqwcb qocbilxsnlebrvyblah blahh lbldbwe ocneqc ow xqwcb qocbilxsnlebrvy bcpibwuiqvcbicb  bcpibwuiqvcbicb "
     },
 
     //tier display
@@ -12,7 +14,7 @@ const featuredProjects = [
         id: 2,
         title: "snack tier + scones",
         image: "/food/xmasTier.jpg",
-
+        desc: "blah blahh lbldbwe ocneqc ow xqwcb qocbilxsnlebrvy bcpibwuiqvcbicb "
     },
 
     //chocolate cherry cardamom tart
@@ -20,7 +22,7 @@ const featuredProjects = [
         id: 3,
         title: "chocolate cherry cardamom tart",
         image: "/food/chocCherryTart.jpg",
-
+        desc: "blah blahh lbldbwe ocneqc ow xqwcb qocbilxsnlebrvy bcpibwuiqvcbicb blah blahh lbldbwe ocneqc ow "
 
     }
 ]
@@ -37,17 +39,19 @@ export const OfflineProjectsSection = () => {
 
                 {/* featured projects */}
                 <h2 className="text-xl md:text-2xl font-semibold text-center pb-3"> featured works </h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center pb-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center pb-8 pl-16 pr-16">
                     {featuredProjects.map(project =>
-                        <div key={project.id} className="text-center max-w-xs space-y-2">
-                            <p className="text-left font-medium">{project.title}</p>
+                        <div key={project.id} className="text-left max-w-xs space-y-2 bg-white/80 border border-gray-200 p-2 rounded-md hover:shadow-lg">
+                            <p className="font-semibold text-sm">{project.title}</p>
                             <div className="aspect-square w-full max-w-250 mx-auto  overflow-hidden rounded-md shadow-2xs">
                                 <img
-                                    src={project.image}
+                                    src={project.image}s
                                     alt={project.title}
                                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                                 />
                             </div>
+                            <p className="font-thin text-sm">{project.desc}</p>
+
                         </div>
                     )}
                 </div>
