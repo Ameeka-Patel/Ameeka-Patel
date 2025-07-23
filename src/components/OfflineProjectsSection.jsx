@@ -10,7 +10,7 @@ const featuredProjects = [
     //tier display
     {
         id: 2,
-        title: "chocolate orange cake",
+        title: "snack tier + scones",
         image: "/food/xmasTier.jpg",
 
     },
@@ -37,23 +37,24 @@ export const OfflineProjectsSection = () => {
 
                 {/* featured projects */}
                 <h2 className="text-xl md:text-2xl font-semibold text-center pb-3"> featured works </h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center pb-8">
                     {featuredProjects.map(project =>
                         <div key={project.id} className="text-center max-w-xs space-y-2">
                             <p className="text-left font-medium">{project.title}</p>
-                            <div className="aspect-square w-full max-w-250 mx-auto">
+                            <div className="aspect-square w-full max-w-250 mx-auto  overflow-hidden rounded-md shadow-2xs">
                                 <img
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-full object-cover rounded-lg shadow-md"
+                                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                                 />
                             </div>
-
                         </div>
-
                     )}
-
                 </div>
+
+                {/* other */}
+                <h2 className="text-xl text-gray-400 md:text-2xl font-semibold text-center pb-3"> ( more coming soon :O )  </h2>
+
 
 
             </div>
