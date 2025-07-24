@@ -30,8 +30,6 @@ export const LeafBackground = () => {
         const numberOfLeaves = Math.floor(
             window.innerWidth * window.innerHeight / 70000
         );
-        console.log("Area: " + window.innerWidth * window.innerHeight);
-        console.log("Number of leaves: " + numberOfLeaves);
 
         const newLeaves = []
 
