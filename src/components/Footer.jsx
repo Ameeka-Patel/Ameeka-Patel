@@ -7,7 +7,7 @@ export const Footer = () => {
 
 
             <div className="flex gap-2">
-                <p>top: </p>
+                <p className="opacity-0 sm:opacity-100">top: </p>
                 <a href="#hero">
                     <ArrowUp />
                 </a>
