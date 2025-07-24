@@ -35,11 +35,11 @@ export const LeafToggle = () => {
 
 
     return (
-    <button onClick={toggleTheme} className={cn("fixed max-sm:hidden top-1 right-4 z-50 p-2 rounded-full transition-colors duration-300",
+    <button onClick={toggleTheme} className={cn("fixed top-5 right-16 sm:top-0 sm:right-2 z-50 p-2 rounded-full transition-colors duration-300",
         "focus:outline-hidden"
     )}>
         {isLeafMode ? (
-            <WheatOff className="h-6 w-6 text-red-600"/>
+            <WheatOff className="h-6 w-6  text-red-600"/>
         ) : (
             <Wheat className="h-6 w-6 text-orange-500" /> 
         )}
