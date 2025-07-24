@@ -28,8 +28,10 @@ export const LeafBackground = () => {
     const generateLeaves = () => {
         //generate 1-4px leaves based on size of display window 
         const numberOfLeaves = Math.floor(
-            window.innerWidth * window.innerHeight / 100000
+            window.innerWidth * window.innerHeight / 70000
         );
+        console.log("Area: " + window.innerWidth * window.innerHeight);
+        console.log("Number of leaves: " + numberOfLeaves);
 
         const newLeaves = []
 
