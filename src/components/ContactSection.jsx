@@ -1,11 +1,9 @@
 import { Github, Linkedin, Mail, MapPin, Send } from "lucide-react"
 import { cn } from "@/lib/utils";
-import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 
 
 export const ContactSection = () => {
-    const { toast } = useToast();
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     return (

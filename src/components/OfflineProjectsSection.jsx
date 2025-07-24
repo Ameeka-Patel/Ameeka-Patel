@@ -5,7 +5,7 @@ const featuredProjects = [
         id: 1,
         title: "lemon meringue tart",
         image: "/food/lemonTart.jpeg",
-        desc: "blah blahh lbldbwe ocneqc ow xqwcb qocbilxsnlebrvyblah blahh lbldbwe ocneqc ow xqwcb qocbilxsnlebrvy bcpibwuiqvcbicb  bcpibwuiqvcbicb "
+        desc: "6/12/25: this was the first tart i ever made + my first time making meringue so i wasn't expecting much but i'm super happy with how it turned out"
     },
 
     //tier display
@@ -13,15 +13,15 @@ const featuredProjects = [
         id: 2,
         title: "snack tier + scones",
         image: "/food/xmasTier.jpg",
-        desc: "blah blahh lbldbwe ocneqc ow xqwcb qocbilxsnlebrvy bcpibwuiqvcbicb "
+        desc: "12/25/24: fun little breakfast tier display with matcha checkerboard cookies, avocado toast with goat cheese and pomegranate, and deviled eggs (and scones on the side)"
     },
 
-    //chocolate cherry cardamom tart
+    //chocolate orange cake
     {
         id: 3,
-        title: "chocolate cherry cardamom tart",
-        image: "/food/chocCherryTart.jpg",
-        desc: "blah blahh lbldbwe ocneqc ow xqwcb qocbilxsnlebrvy bcpibwuiqvcbicb blah blahh lbldbwe ocneqc ow "
+        title: "chocolate orange cake",
+        image: "/food/chocOrangeCake.jpg",
+        desc: "5/5/25: i always love making my own birthday cakes + this time i tried using the entire orange (peels for marmalade, juice + flesh for cake batter, leftover scraps were dehydrated for decoration)"
 
     }
 ]
