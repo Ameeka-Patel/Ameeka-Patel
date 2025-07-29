@@ -37,12 +37,12 @@ export const OfflineProjectsSection = () => {
                 </p>
 
                 {/* featured projects */}
-                <h2 className="text-xl md:text-2xl font-semibold text-center pb-3"> featured works </h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center pb-8 pl-16 pr-16">
+                <h2 className="text-2xl font-semibold text-center pb-3"> featured works </h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center pb-4 md:pl-16 md:pr-16">
                     {featuredProjects.map(project =>
                         <div key={project.id} className="text-left max-w-xs space-y-2 bg-white/80 border border-gray-200 p-2 rounded-md hover:shadow-lg">
                             <p className="font-semibold text-sm">{project.title}</p>
-                            <div className="aspect-square w-full max-w-250 mx-auto  overflow-hidden rounded-md shadow-2xs">
+                            <div className="aspect-square w-full max-w-250 mx-auto overflow-hidden rounded-md shadow-2xs">
                                 <img
                                     src={project.image}s
                                     alt={project.title}
