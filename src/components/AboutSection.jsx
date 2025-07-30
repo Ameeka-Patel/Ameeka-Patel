@@ -69,15 +69,14 @@ export const AboutSection = () => {
 
 
                         <p className="text-muted-foreground">
-                            i am always eager to learn something new and further my
-                            web dev skills, whether that is through Sandbox (see my projects
-                            below) or through personal projects like this!
+                            hello, my name is ameeka patel! i am always eager to learn something new and further
+                            my web dev skills, whether that is through student organizations like Sandbox 
+                            or through personal projects like this (scroll to see all of my projects below)!
                         </p>
 
                         <p className="text-muted-foreground">
-                            other than this, my offline hobbies include 
-                            baking/cooking, going on long runs, and
-                            hanging out with friends
+                            when i'm not working on my next project, you can find me testing new recipes for my book,
+                            exploring new running trails, or scouring for an iced mocha
                         </p>
 
                         <div className="clear-button w-fit flex items-center mx-auto gap-2">
