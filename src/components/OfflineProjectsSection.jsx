@@ -25,6 +25,116 @@ const featuredProjects = [
 
     }
 ]
+
+const otherProjects = [
+    {
+        id: 1,
+        title: "apple galette",
+        image: "/food/appleGalette.jpg",
+    }, 
+
+    {
+        id: 2,
+        title: "carrot cake",
+        image: "/food/carrotCake.jpg",
+    }, 
+
+    {
+        id: 3,
+        title: "english muffin dough",
+        image: "/food/engMuffin.jpg",
+    }, 
+
+    {
+        id: 4,
+        title: "smashed potatoes",
+        image: "/food/smashPotato.jpg",
+    }, 
+
+    {
+        id: 5,
+        title: "zulo's bday cake",
+        image: "/food/zuloCake.jpg",
+    }, 
+
+    {
+        id: 6,
+        title: "chicken torta",
+        image: "/food/torta.jpg",
+    }, 
+
+    {
+        id: 7,
+        title: "ramen recipe",
+        image: "/food/ramenRecipe.jpg",
+    }, 
+
+    {
+        id: 8,
+        title: "brunch spread",
+        image: "/food/brunch1.jpg",
+    }, 
+
+    {
+        id: 9,
+        title: "bread roll dough",
+        image: "/food/rollDough.jpg",
+    }, 
+
+    {
+        id: 10,
+        title: "tomato + labneh recipe",
+        image: "/food/labnehRecipe.jpg"
+    }, 
+
+    {
+        id: 11,
+        title: "matcha cookie dough",
+        image: "/food/matchaCookieDough.jpg",
+    }, 
+
+    {
+        id: 12,
+        title: "pomegranate pistachio loaf",
+        image: "/food/pomPistaLoaf.jpg",
+    }, 
+
+    {
+        id: 13,
+        title: "custard + pavlova tier",
+        image: "/food/nyeTier.jpg",
+    }, 
+
+    {
+        id: 14,
+        title: "blackberry chocolate cake",
+        image: "/food/blackberryChocCake.jpg",
+    }, 
+
+    {
+        id: 15,
+        title: "choc orange cake process",
+        image: "/food/chocOrangeProcess.jpg",
+    }, 
+
+    {
+        id: 16,
+        title: "crepes",
+        image: "/food/crepes.jpg",
+    }, 
+
+    {
+        id: 17,
+        title: "choc cherry cardamom tart",
+        image: "/food/cherryCardamomTart.jpg",
+    }, 
+
+    {
+        id: 18,
+        title: "chocolate fruit cake",
+        image: "/food/chocCake.jpg",
+    }, 
+]
 export const OfflineProjectsSection = () => {
     return (
         <section id="offlineProjects" className="py-24 px-4 relative">
@@ -32,12 +142,15 @@ export const OfflineProjectsSection = () => {
                 {/*header + desc*/}
                 <h2 className="text-3xl md:text-4xl font-bold text-center"> (offline) projects </h2>
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto pt-2">
-                    when i'm not cooking in the classroom, i'm cooking in the kitchen :))
-                    below, you can find my featured works, progress photos, and handwritten recipes!
+                    outside of the classroom, i like to clear my mind by cooking/baking and documenting 
+                    my process in my recipe book. 
                 </p>
 
                 {/* featured projects */}
-                <h2 className="text-2xl font-semibold text-center pb-3"> featured works </h2>
+                <h2 className="text-2xl font-semibold text-center"> featured works </h2>
+                <p className="text-center text-muted-foreground mb-4 max-w-2xl mx-auto">
+                    here are some of my projects that i am most proud of! 
+                </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center pb-4 md:pl-16 md:pr-16">
                     {featuredProjects.map(project =>
                         <div key={project.id} className="text-left max-w-xs space-y-2 bg-white/80 border border-gray-200 p-2 rounded-md hover:shadow-lg">
@@ -55,8 +168,27 @@ export const OfflineProjectsSection = () => {
                     )}
                 </div>
 
-                {/* other */}
-                <h2 className="text-xl text-gray-400 md:text-2xl font-semibold text-center pb-3"> ( more coming soon :O )  </h2>
+                {/* other projects */}
+                <h2 className="text-2xl font-semibold text-center pt-5"> other </h2>
+                <p className="text-center text-muted-foreground mb-4 max-w-2xl mx-auto">
+                    here is a dump of everything else. i love taking photos to document my process 
+                    so browse around to see everything from handwritten recipes to progress photos!
+                </p>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center pb-3 md:pl-10 md:pr-10">
+                    {otherProjects.map(project =>
+                        <div key={project.id} >
+                            <p className="font-medium text-sm">{project.title}</p>
+                            <div className="aspect-square w-full max-w-250 mx-auto overflow-hidden rounded-sm shadow-2xs">
+                                <img
+                                    src={project.image}
+                                    alt={project.title}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+
+                        </div>
+                    )}
+                </div>
             </div>
 
         </section>
