@@ -46,13 +46,24 @@ const projects = [
     },
 
     {
-        //plaNUr
+        //maze solver
         id: 5,
+        title: "Safe Bluebikes Finder",
+        description: "(for my Bostonography class) an application that anaylizes public datasets to allow users to gauge whether it is worth it to travel to a farther Bluebikes station with a higher safety score rather than settle for a closer station that is in an area more prone to accidents and fatalities",
+        image: "/projects/safeBluebikesFinder.png",
+        tags: ["React", "TailwindCSS", "Next.js", "Data Cleaning/Analysis"],
+        demoUrl: null,
+        githubUrl: "https://github.com/Ameeka-Patel/Safe-Bluebikes-Finder",
+    },
+
+    {
+        //plaNUr
+        id: 6,
         title: "PlaNUr",
         description: "(for Oasis, a beginner web dev club at Northeastern)  a tool which allows users to streamline the course registration process by browsing professor ratings, class locations, meeting times, and seat availability based on CRN.",
         image: "/projects/plaNUr.png",
         tags: ["React", "JavaScript", "Vite", "React Router"],
-        demoUrl: "https://github.com/Oasis-NEU/f24-group20",
+        demoUrl: null, 
         githubUrl: "https://github.com/Oasis-NEU/f24-group20",
     }
 ]
@@ -80,7 +91,7 @@ export const OnlineProjectsSection = () => {
                                 <img
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                             </div>
 
                             {/* skill tags */}
@@ -97,19 +108,21 @@ export const OnlineProjectsSection = () => {
                                 <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
 
                                 {/* proj desc */}
-                                <p className="text-muted-foreround text-sm mb-4">
+                                <p className="text-muted-foreground text-sm mb-4">
                                     {project.description}
                                 </p>
 
                                 {/* github + demo link*/}
-                                <div className="flex justify-flex between items-center">
+                            <div className="flex justify-between items-center">
                                     <div className="flex space-x-3">
-                                        <a
-                                            href={project.demoUrl}
-                                            className="text-foreground/80 hover:text-primary hover:rotate-20 transition-colors duration-200"
-                                            target="_blank">
-                                            <ExternalLink size={20} />
-                                        </a>
+                                        {project.demoUrl && (
+                                            <a
+                                                href={project.demoUrl}
+                                                className="text-foreground/80 hover:text-primary hover:rotate-20 transition-colors duration-200"
+                                                target="_blank">
+                                                <ExternalLink size={20} />
+                                            </a>
+                                        )}
 
                                         <a
                                             href={project.githubUrl}
@@ -118,11 +131,10 @@ export const OnlineProjectsSection = () => {
                                             <Github size={20} />
                                         </a>
                                     </div>
-                                </div>
-
+                            </div>
                             </div>
 
-                        </ div>
+                        </div>
                     ))}
                 </div>
 
