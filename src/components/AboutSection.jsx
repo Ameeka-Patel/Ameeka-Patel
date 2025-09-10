@@ -3,6 +3,7 @@ import { Code, Box, Wrench, ArrowRight, School, Calendar, LibraryBig, Graduation
 const myLanguages = [
     "Java",
     "Python",
+    "SQL",
     "TypeScript",
     "JavaScript",
     "HTML",
@@ -14,10 +15,11 @@ const myLanguages = [
 const myLibrariesAndFrameworks = [
     "React",
     "Next.js",
-    "Node.js",
-    "Prisma",
     "Tailwind CSS",
-    "JUnit"
+    "Node.js",
+    "JUnit",
+    "Prisma ORM",
+    "Radix UI"
 ]
 
 const myTools = [
@@ -25,6 +27,8 @@ const myTools = [
     "Docker",
     "Vite",
     "Vercel",
+    "Supabase",
+    "PostgreSQL",
     "VSCode",
     "IntelliJ",
     "Eclipse",
@@ -49,7 +53,7 @@ export const AboutSection = () => {
                         <div className="text-left space-y-2">
                             <p>the basics: </p>
                             <div className="flex flex-wrap gap-x-1">
-                                <Calendar /> <b>year: </b>rising sophomore
+                                <Calendar /> <b>year: </b>sophomore
                             </div>
 
                             <div className="flex flex-wrap gap-x-1">
