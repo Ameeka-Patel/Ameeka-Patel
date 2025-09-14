@@ -49,9 +49,9 @@ const projects = [
         //maze solver
         id: 5,
         title: "Safe Bluebikes Finder",
-        description: "(for my Bostonography class) an application that anaylizes public datasets to allow users to gauge whether it is worth it to travel to a farther Bluebikes station with a higher safety score rather than settle for a closer station that is in an area more prone to accidents and fatalities",
+        description: "(for my Bostonography class) an application that analyzes public datasets to allow users to gauge whether it is worth it to travel to a farther Bluebikes station with a higher safety score rather than settle for a closer station that is in an area more prone to accidents and fatalities",
         image: "/projects/safeBluebikesFinder.png",
-        tags: ["React", "TailwindCSS", "Next.js", "Data Cleaning/Analysis"],
+        tags: ["React", "TailwindCSS", "Next.js", "Data Cleaning/Analysis", "Google Maps API"],
         demoUrl: null,
         githubUrl: "https://github.com/Ameeka-Patel/Safe-Bluebikes-Finder",
     },
@@ -84,7 +84,7 @@ export const OnlineProjectsSection = () => {
                     {projects.map((project) => (
                         <div
                             key={project.id}
-                            className="group bg-white/80 border border-gray rounded-lg overflow-hidden shadow-xs card-hover"
+                            className="group bg-white/80 border border-gray rounded-lg overflow-hidden shadow-xs card-hover h-full flex flex-col"
                         >
                             {/* image */}
                             <div className="h-48 overflow-hidden">
@@ -95,7 +95,7 @@ export const OnlineProjectsSection = () => {
                             </div>
 
                             {/* skill tags */}
-                            <div className="p-6">
+                            <div className="p-6 flex flex-col flex-1">
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {project.tags.map((tag, index) =>
                                         <span key ={index} className="px-2 py-1 text-xs font-medium rounded-full bg-primary/10 text-secondary-foreground border">
@@ -113,7 +113,7 @@ export const OnlineProjectsSection = () => {
                                 </p>
 
                                 {/* github + demo link*/}
-                            <div className="flex justify-between items-center">
+                            <div className="flex justify-between items-center mt-auto">
                                     <div className="flex space-x-3">
                                         {project.demoUrl && (
                                             <a

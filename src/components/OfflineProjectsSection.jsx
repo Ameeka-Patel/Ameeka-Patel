@@ -134,6 +134,16 @@ const otherProjects = [
         title: "chocolate fruit cake",
         image: "/food/chocCake.jpg",
     }, 
+    {
+        id: 19,
+        title: "black forest olive oil cake",
+        image: "/food/blackForestOliveOilCake.jpg"
+    },
+    {
+        id: 20,
+        title: "plum frangipane muffins",
+        image: "/food/plumFrangipane.jpg"
+    }
 ]
 export const OfflineProjectsSection = () => {
     return (
