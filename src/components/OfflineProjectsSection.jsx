@@ -26,6 +26,34 @@ const featuredProjects = [
     }
 ]
 
+const toasts = [
+    {
+        id: 1,
+        title: "1/2 egg salad + 1/2 plum ricotta",
+        image: "/food/toast/cucPlum.jpg"
+    },
+    {
+        id: 2,
+        title: "1/2 kiwi ricotta + 1/2 egg with parmesean crips",
+        image:"/food/toast/kiwiEgg.jpg"
+    },
+    {
+        if: 3,
+        title:"mushroom and jammy egg on lemon ricotta",
+        image: "/food/toast/mushroomEgg.jpg"
+    },
+    {
+        ig: 4,
+        title: "1/2 mushroom ricotta + 1/2 jam and ricotta",
+        image: "/food/toast/mushroomJam.jpg"
+    },
+    {
+        id: 5,
+        title: "1/2 tomatoes on ricotta + 1/2 cherries on ricotta",
+        image: "/food/toast/tomatoCherry.jpg"
+    }
+]
+
 const otherProjects = [
     {
         id: 1,
@@ -173,6 +201,26 @@ export const OfflineProjectsSection = () => {
                                 />
                             </div>
                             <p className="font-thin text-sm">{project.desc}</p>
+
+                        </div>
+                    )}
+                </div>
+                {/* toast */}
+                <h2 className="text-2xl font-semibold text-center pt-5"> toasts </h2>
+                <p className="text-center text-muted-foreground mb-4 max-w-2xl mx-auto">
+                    some cool toasts deserve their own section in my opinion!
+                </p>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center pb-3 md:pl-10 md:pr-10">
+                    {toasts.map(project =>
+                        <div key={project.id} >
+                            <p className="font-medium text-sm">{project.title}</p>
+                            <div className="aspect-square w-full max-w-250 mx-auto overflow-hidden rounded-sm shadow-2xs">
+                                <img
+                                    src={project.image}
+                                    alt={project.title}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
 
                         </div>
                     )}
