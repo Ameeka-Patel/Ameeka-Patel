@@ -15,11 +15,15 @@ const myLanguages = [
 const myLibrariesAndFrameworks = [
     "React",
     "Next.js",
-    "Tailwind CSS",
     "Node.js",
-    "JUnit",
+    "NestJS",
+    "Tailwind CSS",
     "Prisma ORM",
-    "Radix UI"
+    "TypeORM",
+    "RadixUI",
+    "Chakra UI",
+    "Junit",
+    "Jest"
 ]
 
 const myTools = [
@@ -29,12 +33,14 @@ const myTools = [
     "Vercel",
     "Supabase",
     "PostgreSQL",
+    "MySQL",
+    "Postman",
     "VSCode",
     "IntelliJ",
+    "Cursor",
     "Eclipse",
     "RStudio",
     "Figma",
-    "Postman"
 ]
 
 export const AboutSection = () => {
