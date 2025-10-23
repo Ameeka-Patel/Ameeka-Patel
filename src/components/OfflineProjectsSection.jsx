@@ -47,11 +47,6 @@ const toasts = [
         title: "1/2 mushroom ricotta + 1/2 jam and ricotta",
         image: "/food/toast/mushroomJam.jpg"
     },
-    {
-        id: 5,
-        title: "1/2 tomatoes on ricotta + 1/2 cherries on ricotta",
-        image: "/food/toast/tomatoCherry.jpg"
-    }
 ]
 
 const otherProjects = [
