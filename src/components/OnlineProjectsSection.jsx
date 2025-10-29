@@ -46,7 +46,7 @@ const projects = [
     },
 
     {
-        //maze solver
+        //safe bluebike finder
         id: 5,
         title: "Safe Bluebikes Finder",
         description: "(for my Bostonography class) an application that analyzes public datasets to allow users to gauge whether it is worth it to travel to a farther Bluebikes station with a higher safety score rather than settle for a closer station that is in an area more prone to accidents and fatalities",
