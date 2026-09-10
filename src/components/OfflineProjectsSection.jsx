@@ -4,7 +4,7 @@ const featuredProjects = [
     id: 1,
     title: "lemon meringue tart",
     image: "/food/lemonTart.jpeg",
-    desc: "6/12/25: this was the first tart i ever made + my first time making meringue so i wasn't expecting much but i'm super happy with how it turned out",
+    desc: "6/12/25: this was the first tart i ever made + my first time making meringue :) i'm super happy with how it turned out",
   },
 
   //tier display
@@ -12,7 +12,7 @@ const featuredProjects = [
     id: 2,
     title: "snack tier + scones",
     image: "/food/xmasTier.jpg",
-    desc: "12/25/24: fun little breakfast tier display with matcha checkerboard cookies, avocado toast with goat cheese and pomegranate, and deviled eggs (and scones on the side)",
+    desc: "12/25/24: tier display with matcha checkerboard cookies, avocado toast with goat cheese and pomegranate, and deviled eggs (and scones on the side)",
   },
 
   //chocolate orange cake
